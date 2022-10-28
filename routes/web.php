@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\aboutController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\StoreController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,4 @@ Route::get('/', function () {
 // });
 Route::get('/home', [HomeController::class, 'home'])->name('home');
 Route::get('/about', [aboutController::class, 'about'])->name('about');
+Route::get('/store', [StoreController::class, 'store'])->name('store');
