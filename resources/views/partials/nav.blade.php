@@ -14,7 +14,7 @@
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{{ route('home') }}">Home
-              <span class="sr-only">(current)</span>
+              {{-- <span class="sr-only">(current)</span> --}}
             </a>
           </li>
           <li class="nav-item px-lg-4">
