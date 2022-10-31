@@ -12,18 +12,18 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active px-lg-4">
+          <li class="nav-item px-lg-4 {{ request()-> routeIs('home')? "active" : "" }}">
             <a class="nav-link text-uppercase text-expanded" href="{{ route('home') }}">Home
               {{-- <span class="sr-only">(current)</span> --}}
             </a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item px-lg-4 {{ request()-> routeIs('about')? "active" : "" }}">
             <a class="nav-link text-uppercase text-expanded" href="{{ route('about') }}">About</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item px-lg-4 {{ request()-> routeIs('product')? "active" : "" }}">
             <a class="nav-link text-uppercase text-expanded" href="{{ route('product') }}">Products</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item px-lg-4 {{ request()-> routeIs('store')? "active" : "" }}">
             <a class="nav-link text-uppercase text-expanded" href="{{ route('store') }}">Store</a>
           </li>
         </ul>
